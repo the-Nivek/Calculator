@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/bgColor"
+    tools:context=".activities.settings.FontAndIconSizeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:titleTextAppearance="@style/LargeTitleTextAppearance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/view_pager"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/spring_dots_indicator"/>
+
+    <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+        android:id="@+id/spring_dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"
+        app:dampingRatio="0.5"
+        app:dotsColor="?attr/colorAccent"
+        app:dotsCornerRadius="2dp"
+        app:dotsSize="16dp"
+        app:dotsSpacing="6dp"
+        app:dotsStrokeColor="?attr/colorAccent"
+        app:dotsStrokeWidth="2dp"
+        app:stiffness="300"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_pager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/title_fs"/>
+
+    <TextView
+        android:id="@+id/title_fs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:textStyle="normal"
+        android:textColor="?attr/settingsTextColor"
+        android:textSize="18sp"
+        android:text="@string/title_fontSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spring_dots_indicator"
+        app:layout_constraintBottom_toTopOf="@+id/rl"
+        android:layout_marginStart="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_fs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/summary_fs">
+
+        <ImageView
+            android:id="@+id/icon_fs_small"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:tint="?attr/settingsIconTint"
+            android:src="@drawable/i_font_size"/>
+
+        <SeekBar
+            android:id="@+id/seekBar_fs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/icon_fs_big"
+            android:layout_toStartOf="@id/icon_fs_big"
+            android:layout_toRightOf="@id/icon_fs_small"
+            android:layout_toEndOf="@id/icon_fs_small"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:max="3"/>
+
+        <ImageView
+            android:id="@+id/icon_fs_big"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:tint="?attr/settingsIconTint"
+            android:src="@drawable/i_font_size"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/summary_fs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:textStyle="normal"
+        android:textColor="?attr/settingsTextColor"
+        android:textSize="15sp"
+        android:text="Extra Groß"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/title_is"/>
+
+    <TextView
+        android:id="@+id/title_is"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:textStyle="normal"
+        android:textColor="?attr/settingsTextColor"
+        android:textSize="18sp"
+        android:text="@string/title_iconSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/summary_fs"
+        app:layout_constraintBottom_toTopOf="@+id/rl2"
+        android:layout_marginStart="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_is"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/summary_is">
+
+        <ImageView
+            android:id="@+id/icon_is_small"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:tint="?attr/settingsIconTint"
+            android:src="@drawable/i_smaller"/>
+
+        <SeekBar
+            android:id="@+id/seekBar_is"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/icon_is_big"
+            android:layout_toStartOf="@id/icon_is_big"
+            android:layout_toRightOf="@id/icon_is_small"
+            android:layout_toEndOf="@id/icon_is_small"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:max="3"/>
+
+        <ImageView
+            android:id="@+id/icon_is_big"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:tint="?attr/settingsIconTint"
+            android:src="@drawable/i_larger"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/summary_is"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:textStyle="normal"
+        android:textColor="?attr/settingsTextColor"
+        android:textSize="15sp"
+        android:text="Extra Groß"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

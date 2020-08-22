@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MAIN -->
+    <string name="appName">Rechner</string>
+    <string name="settings">Einstellungen</string>
+
+
+    <!-- TABS -->
+    <string name="firstTab">@string/appName</string>
+
+    <string name="secondTab">Formeln</string>
+    <string name="as_formulas">Bald verfügbar!</string>
+
+    <string name="thirdTab">Konverter</string>
+    <string name="as_converter">Bald verfügbar!</string>
+
+
+    <!-- ITEMS -->
+    <!-- calculator -->
+    <string name="historyItem">Verlauf</string>
+
+    <!-- formulas -->
+    <string name="mathematicalFormulasItem">Mathematische Formeln</string>
+    <string name="areaItem">Flächeninhalt</string>
+
+    <string name="physicalFormulasItem">Physikalische Formeln</string>
+    <string name="velocityItem">Geschwindigkeit</string>
+
+    <!-- converter -->
+    <string name="physicalQuantityItem">Physikalische Größe</string>
+
+
+    <!-- ERRORS -->
+    <string name="divideError">Error: Teilen durch 0</string>
+
+
+    <!-- SETTINGS -->
+    <!-- main settings -->
+    <string name="settings_general">Generell</string>
+    <string name="summary_general">Maßeinheit, Zahlenformat, Anwendungseinstellungen</string>
+
+    <string name="settings_layout">Gestaltung</string>
+    <string name="summary_layout">Design, Details, Tastenstyle, Text</string>
+
+    <string name="settings_help">Hilfe</string>
+    <string name="summary_help">Feedback, Beschreibungen für die Anwendungsfunktionen</string>
+
+    <string name="settings_about">Über</string>
+    <string name="summary_about">Updateverlauf, Anwendungsinformation</string>
+
+    <!-- general settings -->
+    <string name="title_unitOfMeasurement">Maßeinheit:</string>
+    <string name="unitOfMeasurement_radian">Bogenmaß (Radiant)\u0020</string>
+    <string name="unitOfMeasurement_degree">Gradmaß (Grad)\u0020</string>
+
+    <string name="title_numberFormat">Zahlenformat:</string>
+
+    <string name="category_applicationSettings">ANWENDUNGSEINSTELLUNGEN</string>
+
+    <string name="title_language">Sprache:</string>
+    <string name="language_automatically">Automatisch\u0020</string>
+    <string name="language_english">Englisch\u0020</string>
+    <string name="language_german">Deutsch (Deutschland)\u0020</string>
+
+    <string name="title_keyVibration">Tastenvibration:</string>
+
+    <!-- layout settings -->
+    <string name="title_theme">Design:</string>
+    <string name="theme_white">Weiß\u0020</string>
+    <string name="theme_gray">Grau\u0020</string>
+    <string name="theme_black">Schwarz\u0020</string>
+
+    <string name="title_detailColor">Detail-Farbe:</string>
+    <string name="detailColor_blue">Blau\u0020</string>
+    <string name="detailColor_green">Grün\u0020</string>
+    <string name="detailColor_red">Rot\u0020</string>
+
+    <string name="title_style">Stil:</string>
+    <string name="style_normal">Normal\u0020</string>
+    <string name="style_bold">Fett\u0020</string>
+    <string name="style_italic">Kursiv\u0020</string>
+
+    <string name="category_size_and_style">GRÖßE UND STIL</string>
+    <string name="title_font">Schriftart:</string>
+
+    <string name="settings_fontAndIconSize">Schrift- \u0026 Icon-Größe</string>
+    <string name="summary_fontAndIconSize">Ändere die Größe des Textes und der Icons</string>
+
+    <!-- font size settings -->
+    <string name="title_fontSize">Schriftgröße:</string>
+    <string name="title_iconSize">Icon-Größe:</string>
+
+    <string name="size_small">Klein</string>
+    <string name="size_default">Standard</string>
+    <string name="size_large">Groß</string>
+    <string name="size_extra_large">Extra groß</string>
+
+    <string name="title_calculator_preview">Taschenrechner [Vorschau]</string>
+    <string name="title_formulas_preview">Formeln [Vorschau]</string>
+    <string name="title_converter_preview">Konverter [Vorschau]</string>
+    <string name="title_settings_preview">Einstellungen [Vorschau]</string>
+
+    <!-- else -->
+    <string name="cancel">Abbrechen</string>
+
+
+    <!-- UPDATE MESSAGE -->
+    <string name="newFeatures"><b>Version: </b>1.3-BETA \n\n<b><u>Neue Funktionen:</u></b> \n- Update-Nachricht wird nur einmal angezeigt \n\n<b><u>1.2-BETA</u></b> \n- der Inhalt der Textfelder bleibt erhalten \n\n<b><u>1.1-BETA</u></b> \n- Update-Nachricht \n- Prozente funktionieren auch mit Vorzeichen</string>
+    <string name="availableSoon">Bald verfügbar!</string>
+</resources>

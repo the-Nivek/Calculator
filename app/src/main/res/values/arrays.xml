@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="numberFormatValues">
+        <item>1234.5</item>
+        <item>1234,5</item>
+        <item>1,234.5</item>
+        <item>1.234,5</item>
+        <item>1 234.5</item>
+        <item>1 234,5</item>
+    </string-array>
+
+    <string-array name="languageValues">
+        <item>@string/language_automatically</item>
+        <item>@string/language_english</item>
+        <item>@string/language_german</item>
+    </string-array>
+
+    <string-array name="themeValues">
+        <item>@string/theme_white</item>
+        <item>@string/theme_gray</item>
+        <item>@string/theme_black</item>
+    </string-array>
+
+    <string-array name="detailColorValues">
+        <item>@string/detailColor_blue</item>
+        <item>@string/detailColor_green</item>
+        <item>@string/detailColor_red</item>
+    </string-array>
+
+    <string-array name="textStyleValues">
+        <item>@string/style_normal</item>
+        <item>@string/style_italic</item>
+        <item>@string/style_bold</item>
+    </string-array>
+</resources>

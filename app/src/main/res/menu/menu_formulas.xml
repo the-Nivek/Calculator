@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_history"
+        android:title="@string/historyItem"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_mathematical_formulas"
+        android:title="@string/mathematicalFormulasItem"
+        app:showAsAction="never">
+
+        <menu>
+
+            <item
+                android:id="@+id/action_area"
+                android:title="@string/areaItem"
+                app:showAsAction="never"/>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/action_physical_formulas"
+        android:title="@string/physicalFormulasItem"
+        app:showAsAction="never">
+
+        <menu>
+
+            <item
+                android:id="@+id/action_velocity"
+                android:title="@string/velocityItem"
+                app:showAsAction="never"/>
+
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="bgColor" format="color"/>
+    <attr name="titleBackground" format="color"/>
+    <attr name="tabsTextColor" format="color"/>
+    <attr name="tabsRippleColor" format="color"/>
+
+    <attr name="snackBarColor" format="color"/>
+    <attr name="snackBarStrokeColor" format="color"/>
+    <attr name="snackBarTextColor" format="color"/>
+
+    <attr name="text_bgColor" format="color"/>
+    <attr name="text_bgStrokeColor" format="color"/>
+    <attr name="lineColor" format="color"/>
+
+    <attr name="buttonColor" format="color"/>
+    <attr name="buttonStrokeColor" format="color"/>
+    <attr name="buttonTextColor" format="color"/>
+
+    <attr name="operatorButtonTextColor" format="color"/>
+
+    <attr name="specialButtonColor" format="color"/>
+    <attr name="specialButtonStrokeColor" format="color"/>
+    <attr name="specialButtonTextColor" format="color"/>
+    <attr name="specialButtonIconColor" format="color"/>
+
+    <attr name="memoryButtonColor" format="color"/>
+    <attr name="memoryButtonStrokeColor" format="color"/>
+    <attr name="memoryButtonTextColor" format="color"/>
+
+    <attr name="disabledColor" format="color"/>
+
+    <attr name="settingsTextColor" format="color"/>
+    <attr name="settingsIconTint" format="color"/>
+
+    <attr name="dialogBackground" format="reference"/>
+    <attr name="dialogTextColor" format="color"/>
+    <attr name="dialogTextColorSecondary" format="color"/>
+    <attr name="dialogTextColorAlertDialogListItem" format="color"/>
+</resources>

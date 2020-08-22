@@ -1,0 +1,444 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <!-- Snackbar -->
+        <item name="snackbarStyle">@style/SnackBarTheme</item>
+        <item name="snackbarButtonStyle">@style/SnackBarTextButtonTheme</item>
+        <item name="snackbarTextViewStyle">@style/SnackBarTextViewTheme</item>
+        <item name="snackBarTextColor">@color/gainsboro</item>
+    </style>
+
+
+    <style name="WhiteTheme" parent="AppTheme.AppBarOverlay">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/lightGray</item>
+        <item name="colorPrimary">@color/whisper</item>
+        <item name="titleTextColor">@color/dimGray</item>
+
+        <item name="iconTint">@color/dimGray</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="actionOverflowButtonStyle">@style/ActionOverflowButton</item>
+        <item name="popupTheme">@style/WhitePopupTheme</item>
+        <item name="snackBarTextColor">@color/whisper</item>
+
+        <item name="tabsTextColor">@color/dimGray</item>
+        <item name="tabSelectedTextColor">@color/summerSky</item>
+        <item name="tabsRippleColor">@color/white</item>
+        <item name="colorAccent">@color/summerSky</item>
+
+        <item name="android:navigationBarColor" tools:ignore="NewApi">@color/whisper</item>
+        <item name="android:navigationBarDividerColor" tools:ignore="NewApi">@color/gainsboro</item>
+
+        <item name="bgColor">@color/white</item>
+        <item name="android:textColor">@color/dimGray</item>
+        <item name="android:editTextColor">@color/dimGray</item>
+
+        <item name="text_bgColor">@color/gainsboro</item>
+        <item name="text_bgStrokeColor">@color/silver</item>
+        <item name="lineColor">@color/silver</item>
+
+        <item name="memoryButtonColor">@color/lightGray</item>
+        <item name="memoryButtonStrokeColor">@color/silver</item>
+        <item name="memoryButtonTextColor">@color/nightRider_2</item>
+
+        <item name="buttonColor">@color/whisper</item>
+        <item name="buttonStrokeColor">@color/gainsboro</item>
+        <item name="buttonTextColor">@color/dimGray</item>
+
+        <item name="operatorButtonTextColor">@color/malibu</item>
+
+        <item name="specialButtonColor">@color/mayaBlue</item>
+        <item name="specialButtonStrokeColor">@color/malibu</item>
+        <item name="specialButtonTextColor">@color/white</item>
+        <item name="specialButtonIconColor">@color/white</item>
+
+        <item name="snackBarColor">@color/malibu</item>
+        <item name="snackBarStrokeColor">@color/dodgerBlue</item>
+
+        <item name="settingsTextColor">@color/dimGray</item>
+        <item name="settingsIconTint">@color/dimGray</item>
+
+        <item name="dialogBackground">@drawable/o_white_dialog_bg</item>
+        <item name="dialogTextColor">@color/gray</item>
+        <item name="dialogTextColorSecondary">@color/gray</item>
+        <item name="dialogTextColorAlertDialogListItem">@color/dimGray</item>
+    </style>
+
+    <style name="WhitePopupTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:textColor">@color/dimGray</item>
+    </style>
+
+    <style name="WhiteAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/o_white_dialog_bg</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="colorAccent">@color/summerSky</item>
+        <item name="android:textColorSecondary">@color/gray</item>
+        <item name="android:textColorAlertDialogListItem">@color/dimGray</item>
+    </style>
+
+
+    <style name="GrayTheme" parent="AppTheme.AppBarOverlay">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/charcoal_2</item>
+        <item name="colorPrimary">@color/dimGray</item>
+        <item name="titleTextColor">@color/lightGray</item>
+
+        <item name="iconTint">@color/lightGray</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="actionOverflowButtonStyle">@style/ActionOverflowButton</item>
+        <item name="popupTheme">@style/GrayPopupTheme</item>
+
+        <item name="tabsTextColor">@color/lightGray</item>
+        <item name="tabSelectedTextColor">@color/summerSky</item>
+        <item name="tabsRippleColor">@color/lightGray</item>
+        <item name="colorAccent">@color/summerSky</item>
+
+        <item name="android:navigationBarColor" tools:ignore="NewApi">@color/dimGray</item>
+        <item name="android:navigationBarDividerColor" tools:ignore="NewApi">@color/charcoal_2</item>
+
+        <item name="bgColor">@color/lightGray</item>
+        <item name="android:textColor">@color/charcoal_2</item>
+        <item name="android:editTextColor">@color/charcoal_2</item>
+
+        <item name="text_bgColor">@color/darkGray</item>
+        <item name="text_bgStrokeColor">@color/gray</item>
+        <item name="lineColor">@color/gray</item>
+
+        <item name="memoryButtonColor">@color/darkGray</item>
+        <item name="memoryButtonStrokeColor">@color/gray</item>
+        <item name="memoryButtonTextColor">@color/nero</item>
+
+        <item name="buttonColor">@color/silver</item>
+        <item name="buttonStrokeColor">@color/darkGray</item>
+        <item name="buttonTextColor">@color/charcoal_2</item>
+
+        <item name="operatorButtonTextColor">@color/dodgerBlue</item>
+
+        <item name="specialButtonColor">@color/summerSky</item>
+        <item name="specialButtonStrokeColor">@color/dodgerBlue</item>
+        <item name="specialButtonTextColor">@color/white</item>
+        <item name="specialButtonIconColor">@color/white</item>
+
+        <item name="snackBarColor">@color/dodgerBlue</item>
+        <item name="snackBarStrokeColor">@color/navyBlue</item>
+
+        <item name="settingsTextColor">@color/charcoal_2</item>
+        <item name="settingsIconTint">@color/dimGray</item>
+
+        <item name="dialogBackground">@drawable/o_gray_dialog_bg</item>
+        <item name="dialogTextColor">@color/dimGray</item>
+        <item name="dialogTextColorSecondary">@color/dimGray</item>
+        <item name="dialogTextColorAlertDialogListItem">@color/charcoal_2</item>
+    </style>
+
+    <style name="GrayPopupTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackground">@color/lightGray</item>
+        <item name="android:textColor">@color/charcoal_2</item>
+    </style>
+
+    <style name="GrayAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/o_gray_dialog_bg</item>
+        <item name="android:textColor">@color/dimGray</item>
+        <item name="colorAccent">@color/summerSky</item>
+        <item name="android:textColorSecondary">@color/dimGray</item>
+        <item name="android:textColorAlertDialogListItem">@color/charcoal_2</item>
+    </style>
+
+
+    <style name="BlackTheme" parent="AppTheme.AppBarOverlay">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorPrimary">@color/black_2</item>
+        <item name="titleTextColor">@color/dimGray</item>
+
+        <item name="iconTint">@color/dimGray</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="actionOverflowButtonStyle">@style/ActionOverflowButton</item>
+        <item name="popupTheme">@style/BlackPopupTheme</item>
+
+        <item name="tabsTextColor">@color/dimGray</item>
+        <item name="tabSelectedTextColor">@color/cobalt</item>
+        <item name="tabsRippleColor">@color/nightRider_2</item>
+        <item name="colorAccent">@color/cobalt</item>
+
+        <item name="android:navigationBarColor" tools:ignore="NewApi">@color/black_2</item>
+        <item name="android:navigationBarDividerColor" tools:ignore="NewApi">@color/black</item>
+
+        <item name="bgColor">@color/nightRider_2</item>
+        <item name="android:textColor">@color/dimGray</item>
+        <item name="android:editTextColor">@color/dimGray</item>
+
+        <item name="text_bgColor">@color/nero</item>
+        <item name="text_bgStrokeColor">@color/charcoal</item>
+        <item name="lineColor">@color/charcoal</item>
+
+        <item name="memoryButtonColor">@color/nero</item>
+        <item name="memoryButtonStrokeColor">@color/charcoal</item>
+        <item name="memoryButtonTextColor">@color/dimGray</item>
+
+        <item name="buttonColor">@color/nightRider</item>
+        <item name="buttonStrokeColor">@color/charcoal</item>
+        <item name="buttonTextColor">@color/gray</item>
+
+        <item name="operatorButtonTextColor">@color/cobalt</item>
+
+        <item name="specialButtonColor">@color/darkCerulean_2</item>
+        <item name="specialButtonStrokeColor">@color/cobalt</item>
+        <item name="specialButtonTextColor">@color/darkGray</item>
+        <item name="specialButtonIconColor">@color/darkGray</item>
+
+        <item name="snackBarColor">@color/cobalt</item>
+        <item name="snackBarStrokeColor">@color/darkCerulean_2</item>
+
+        <item name="settingsTextColor">@color/darkGray</item>
+        <item name="settingsIconTint">@color/gray</item>
+
+        <item name="dialogBackground">@drawable/o_black_dialog_bg</item>
+        <item name="dialogTextColor">@color/gray</item>
+        <item name="dialogTextColorSecondary">@color/gray</item>
+        <item name="dialogTextColorAlertDialogListItem">@color/darkGray</item>
+    </style>
+
+    <style name="BlackPopupTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackground">@color/nightRider_1</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+    <style name="BlackAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/o_black_dialog_bg</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="colorAccent">@color/cobalt</item>
+        <item name="android:textColorSecondary">@color/gray</item>
+        <item name="android:textColorAlertDialogListItem">@color/darkGray</item>
+    </style>
+
+
+    <style name="BlueTheme" parent="AppTheme.AppBarOverlay">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/cobalt</item>
+        <item name="colorPrimary">@color/navyBlue</item>
+        <item name="titleTextColor">@color/white</item>
+
+        <item name="iconTint">@color/white</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="actionOverflowButtonStyle">@style/ActionOverflowButton</item>
+        <item name="popupTheme">@style/BluePopupTheme</item>
+
+        <item name="tabsTextColor">@color/white</item>
+        <item name="tabSelectedTextColor">@color/mayaBlue</item>
+        <item name="tabsRippleColor">@color/lightGray</item>
+        <item name="colorAccent">@color/mayaBlue</item>
+
+        <item name="bgColor">@color/lightGray</item>
+        <item name="android:textColor">@color/nightRider_1</item>
+        <item name="android:editTextColor">@color/nightRider_1</item>
+
+        <item name="text_bgColor">@color/darkGray</item>
+        <item name="text_bgStrokeColor">@color/gray</item>
+        <item name="lineColor">@color/gray</item>
+
+        <item name="memoryButtonColor">@color/darkGray</item>
+        <item name="memoryButtonStrokeColor">@color/gray</item>
+        <item name="memoryButtonTextColor">@color/nero</item>
+
+        <item name="buttonColor">@color/silver</item>
+        <item name="buttonStrokeColor">@color/darkGray</item>
+        <item name="buttonTextColor">@color/charcoal_2</item>
+
+        <item name="operatorButtonTextColor">@color/dodgerBlue</item>
+
+        <item name="specialButtonColor">@color/dodgerBlue</item>
+        <item name="specialButtonStrokeColor">@color/cobalt</item>
+        <item name="specialButtonTextColor">@color/white</item>
+        <item name="specialButtonIconColor">@color/white</item>
+
+        <item name="snackBarColor">@color/cobalt</item>
+        <item name="snackBarStrokeColor">@color/darkCerulean_2</item>
+    </style>
+
+    <style name="BluePopupTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackground">@color/lightGray</item>
+        <item name="android:textColor">@color/nightRider_1</item>
+    </style>
+
+
+    <style name="GreenTheme" parent="AppTheme.AppBarOverlay">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/forestGreen</item>
+        <item name="colorPrimary">@color/darkPastelGreen</item>
+        <item name="titleTextColor">@color/white</item>
+
+        <item name="iconTint">@color/white</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="actionOverflowButtonStyle">@style/ActionOverflowButton</item>
+        <item name="popupTheme">@style/GreenPopupTheme</item>
+
+        <item name="tabsTextColor">@color/white</item>
+        <item name="tabSelectedTextColor">@color/malachite_2</item>
+        <item name="tabsRippleColor">@color/lightGray</item>
+        <item name="colorAccent">@color/malachite_2</item>
+
+        <item name="bgColor">@color/lightGray</item>
+        <item name="android:textColor">@color/nightRider_1</item>
+        <item name="android:editTextColor">@color/nightRider_1</item>
+
+        <item name="text_bgColor">@color/darkGray</item>
+        <item name="text_bgStrokeColor">@color/gray</item>
+        <item name="lineColor">@color/gray</item>
+
+        <item name="memoryButtonColor">@color/darkGray</item>
+        <item name="memoryButtonStrokeColor">@color/gray</item>
+        <item name="memoryButtonTextColor">@color/nero</item>
+
+        <item name="buttonColor">@color/silver</item>
+        <item name="buttonStrokeColor">@color/darkGray</item>
+        <item name="buttonTextColor">@color/charcoal_2</item>
+
+        <item name="operatorButtonTextColor">@color/darkPastelGreen_1</item>
+
+        <item name="specialButtonColor">@color/darkPastelGreen_1</item>
+        <item name="specialButtonStrokeColor">@color/darkPastelGreen</item>
+        <item name="specialButtonTextColor">@color/white</item>
+        <item name="specialButtonIconColor">@color/white</item>
+
+        <item name="snackBarColor">@color/darkPastelGreen</item>
+        <item name="snackBarStrokeColor">@color/forestGreen</item>
+    </style>
+
+    <style name="GreenPopupTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackground">@color/lightGray</item>
+        <item name="android:textColor">@color/nightRider_1</item>
+    </style>
+
+
+    <style name="RedTheme" parent="AppTheme.AppBarOverlay">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/darkRed</item>
+        <item name="colorPrimary">@color/freeSpeechRed</item>
+        <item name="titleTextColor">@color/white</item>
+
+        <item name="iconTint">@color/white</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="actionOverflowButtonStyle">@style/ActionOverflowButton</item>
+        <item name="popupTheme">@style/RedPopupTheme</item>
+
+        <item name="tabsTextColor">@color/white</item>
+        <item name="tabSelectedTextColor">@color/tomato</item>
+        <item name="tabsRippleColor">@color/lightGray</item>
+        <item name="colorAccent">@color/tomato</item>
+
+        <item name="bgColor">@color/lightGray</item>
+        <item name="android:textColor">@color/nightRider_1</item>
+        <item name="android:editTextColor">@color/nightRider_1</item>
+
+        <item name="text_bgColor">@color/darkGray</item>
+        <item name="text_bgStrokeColor">@color/gray</item>
+        <item name="lineColor">@color/gray</item>
+
+        <item name="memoryButtonColor">@color/darkGray</item>
+        <item name="memoryButtonStrokeColor">@color/gray</item>
+        <item name="memoryButtonTextColor">@color/nero</item>
+
+        <item name="buttonColor">@color/silver</item>
+        <item name="buttonStrokeColor">@color/darkGray</item>
+        <item name="specialButtonIconColor">@color/white</item>
+        <item name="buttonTextColor">@color/charcoal_2</item>
+
+        <item name="operatorButtonTextColor">@color/freeSpeechRed_3</item>
+
+        <item name="specialButtonColor">@color/freeSpeechRed_3</item>
+        <item name="specialButtonStrokeColor">@color/freeSpeechRed</item>
+        <item name="specialButtonTextColor">@color/white</item>
+
+        <item name="snackBarColor">@color/freeSpeechRed</item>
+        <item name="snackBarStrokeColor">@color/darkRed</item>
+    </style>
+
+    <style name="RedPopupTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackground">@color/lightGray</item>
+        <item name="android:textColor">@color/nightRider_1</item>
+    </style>
+
+
+    <style name="ActionOverflowButton" parent="android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/i_menu</item>
+    </style>
+
+    <style name="CheckBox">
+        <item name="android:textColorSecondary">?attr/iconTint</item>
+    </style>
+
+
+    <style name="SnackBarTheme" parent="@style/Widget.MaterialComponents.Snackbar">
+        <item name="android:background">@drawable/o_snackbar</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="actionTextColorAlpha">1.0</item>
+    </style>
+
+    <style name="SnackBarTextButtonTheme" parent="@style/Widget.MaterialComponents.Button.TextButton.Snackbar">
+        <item name="android:textColor">?attr/specialButtonTextColor</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="SnackBarTextViewTheme" parent="@style/Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">?attr/snackBarTextColor</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:alpha">1.0</item>
+    </style>
+
+
+    <style name="SmallTitleTextAppearance">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">?attr/titleTextColor</item>
+    </style>
+
+    <style name="TitleTextAppearance">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">?attr/titleTextColor</item>
+    </style>
+
+    <style name="LargeTitleTextAppearance">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">?attr/titleTextColor</item>
+    </style>
+
+    <style name="ExtraLargeTitleTextAppearance">
+        <item name="android:textSize">29sp</item>
+        <item name="android:textColor">?attr/titleTextColor</item>
+    </style>
+
+
+    <style name="SmallTabTextAppearance">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">?attr/titleTextColor</item>
+    </style>
+
+    <style name="TabTextAppearance">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">?attr/titleTextColor</item>
+    </style>
+
+    <style name="LargeTabTextAppearance">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">?attr/titleTextColor</item>
+    </style>
+
+    <style name="ExtraLargeTabTextAppearance">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">?attr/titleTextColor</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

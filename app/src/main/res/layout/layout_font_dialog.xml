@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:layout_gravity="center">
+
+    <View
+        android:id="@+id/bg_popup_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="?attr/dialogBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="normal"
+        android:textColor="?attr/dialogTextColor"
+        android:textSize="20sp"
+        android:text="Font"
+        app:layout_constraintBottom_toTopOf="@id/typeface"
+        app:layout_constraintStart_toStartOf="@+id/bg_popup_view"
+        app:layout_constraintTop_toTopOf="@id/bg_popup_view"/>
+
+    <RadioGroup
+        android:id="@+id/typeface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cancelBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heading">
+
+        <RadioButton
+            android:id="@+id/sansSerif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:buttonTint="@color/color_dialog_check_box"
+            android:textColor="?attr/dialogTextColorAlertDialogListItem"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Sans Serif Medium "/>
+
+        <RadioButton
+            android:id="@+id/calibri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:buttonTint="@color/color_dialog_check_box"
+            android:textColor="?attr/dialogTextColorAlertDialogListItem"
+            android:textSize="15sp"
+            android:fontFamily="@font/calibri"
+            android:text="Calibri "/>
+
+        <RadioButton
+            android:id="@+id/lato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:buttonTint="@color/color_dialog_check_box"
+            android:textColor="?attr/dialogTextColorAlertDialogListItem"
+            android:textSize="15sp"
+            android:fontFamily="@font/lato"
+            android:text="Lato "/>
+
+        <RadioButton
+            android:id="@+id/erasDemiITC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:buttonTint="@color/color_dialog_check_box"
+            android:textColor="?attr/dialogTextColorAlertDialogListItem"
+            android:textSize="15sp"
+            android:fontFamily="@font/eras_demi_itc"
+            android:text="Eras Demi ITC "/>
+
+        <RadioButton
+            android:id="@+id/erasLightITC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:buttonTint="@color/color_dialog_check_box"
+            android:textColor="?attr/dialogTextColorAlertDialogListItem"
+            android:textSize="15sp"
+            android:fontFamily="@font/eras_light_itc"
+            android:text="Eras Light ITC "/>
+
+        <RadioButton
+            android:id="@+id/agencyFB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:buttonTint="@color/color_dialog_check_box"
+            android:textColor="?attr/dialogTextColorAlertDialogListItem"
+            android:textSize="15sp"
+            android:fontFamily="@font/agency_fb"
+            android:text="Agency FB "/>
+
+        <RadioButton
+            android:id="@+id/inkFree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:buttonTint="@color/color_dialog_check_box"
+            android:textColor="?attr/dialogTextColorAlertDialogListItem"
+            android:textSize="15sp"
+            android:fontFamily="@font/ink_free"
+            android:text="Ink Free "/>
+
+        <RadioButton
+            android:id="@+id/segoePrint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:buttonTint="@color/color_dialog_check_box"
+            android:textColor="?attr/dialogTextColorAlertDialogListItem"
+            android:textSize="15sp"
+            android:fontFamily="@font/segoe_print"
+            android:text="Segoe Print "/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/transparent"
+        android:textColor="?attr/dialogTextColor"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="@id/bg_popup_view"
+        app:layout_constraintEnd_toEndOf="@+id/bg_popup_view"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

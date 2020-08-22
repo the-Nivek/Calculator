@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- BLACK to WHITE -->
+    <color name="black">#000000</color>
+    <color name="black_2">#121212</color>
+    <color name="nero">#1f1f1f</color>
+    <color name="nightRider">#2b2b2b</color>
+    <color name="nightRider_1">#303030</color>
+    <color name="nightRider_2">#333333</color>
+    <color name="charcoal">#454545</color>
+    <color name="charcoal_2">#4a4a4a</color>
+    <color name="dimGray">#696969</color>
+    <color name="gray">#808080</color>
+    <color name="darkGray">#a9a9a9</color>
+    <color name="silver">#c4c4c4</color>
+    <color name="lightGray">#d3d3d3</color>
+    <color name="gainsboro">#e0e0e0</color>
+    <color name="whisper">#ededed</color>
+    <color name="white">#ffffff</color>
+
+    <!-- BLUE -->
+    <color name="darkCerulean">#004880</color>
+    <color name="darkCerulean_2">#004e8a</color>
+    <color name="cobalt">#00589c</color>
+    <color name="navyBlue">#0077d3</color>
+    <color name="dodgerBlue">#0085eb</color>
+    <color name="malibu">#51b1ff</color>
+    <color name="summerSky">#4aaeff</color>
+    <color name="mayaBlue">#5eb7ff</color>
+
+    <!-- GREEN -->
+    <color name="green">#008720</color>
+    <color name="forestGreen">#009423</color>
+    <color name="darkPastelGreen">#00b32a</color>
+    <color name="darkPastelGreen_1">#00bf2d</color>
+    <color name="darkPastelGreen_2">#00cc30</color>
+    <color name="darkPastelGreen_3">#00db33</color>
+    <color name="malachite">#00ed37</color>
+    <color name="malachite_2">#17ff4d</color>
+
+    <!-- RED -->
+    <color name="maroon">#800000</color>
+    <color name="darkRed">#940000</color>
+    <color name="freeSpeechRed">#b50000</color>
+    <color name="freeSpeechRed_2">#bf0000</color>
+    <color name="freeSpeechRed_3">#db0000</color>
+    <color name="tomato">#ff7070</color>
+</resources>
